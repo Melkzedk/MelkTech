@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<style>
+*{
+margin: 0px;
+padding: 0px;
+}
+body{
+background-image: url('images/pexels-lumn-399161.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+font-family: Century Gothic;
+text-align: center;
+}
+.title{
+margin-top: 100px;
+color: #fff;
+}
+.title h1{
+font-size: 32px;
+line-height: 10px;
+}
+.title h2{
+font-size: 16px;
+}
+form{
+margin-top: 50px;
+}
+.form-control{
+width: 600px;
+background: transparent;
+border: none;
+outline: none;
+border-bottom: 1px solid gray;
+color: #fff;
+font-size: 18px;
+margin-bottom: 16px;
+}
+input{
+height: 40px;
+}
+#sub{
+background-color: #ff5722;
+border-color: transparent;
+color: #fff;
+font-size: 20px;
+letter-spacing: 2px;
+height: 50px;
+margin-top: 20px;
+transition: 0.4s ease;
+}
+#sub:hover{
+background-color: #44336;
+cursor: pointer;
+}
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+</style>
+</head>
+<body>
+<div class="title">
+<h1>CONTACT MELK</h1>
+</div>
+<div class="box">
+<form action="contact.php" method="POST">
+<input type="text" name="fname" class="form-control" required placeholder="Full Name"><br>
+<input type="email" name="email" class="form-control" required placeholder="Email"><br>
+<input type="text" name="number" class="form-control" required placeholder="Mobile Number"><br>
+<textarea name="message" class="form-control" placeholder="message" row="4" required></textarea><br>
+<input type="submit" id="sub" class="form-control" name="SEND" value="SEND">
+</form>
+</div>
+</body>
+</html>

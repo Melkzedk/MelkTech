@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<style>
+*{
+margin: 0px;
+padding: 0px;
+box-sizzling: border-box;
+font-family: Arial,san-serif;
+}
+body{
+background-image: url(images/pexels-vlada-karpovich-4050315.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+nav{
+background: #222222;
+padding: 10px 40px 10px 70px;
+border: 1px solid #000;
+border-left: none;
+border-right: none;
+}
+nav ul{
+display: flex;
+list-style: none;
+flex-wrap: wrap;
+align-item: center;
+justify-content: center;
+}
+nav ul li.logo{
+flex: 1;
+font-size: 30px;
+font-weight: 700;
+}
+nav ul div.item{
+padding: 0px 25px;
+display: inline-flex;
+}
+nav ul div.item a {
+text-decoration: none;
+font-size: 18px;
+padding: 0px 12px;
+color: #fff;
+}
+nav li.search{
+height: 40px;
+width: 240px;
+display: flex;
+background: #f2f2f2;
+border-radius: 5px;
+}
+nav li.search input{
+height: 100%;
+width: 500px;
+border: none;
+outline: none;
+padding: 0px 10px;
+color: #000;
+font-size: 18px;
+border-radius: 5px 0px 5px;
+}
+.melk{
+text-align: center;
+margin-top: 300px;
+}
+footer{
+padding: 10px;
+font-size: 17px;
+font-size: bold;
+text-align: center;
+background-color: #594848;
+color: white;
+font-family: Arial;
+letter-spacing: 1px;
+margin-top: 450px;
+}
+</style>
+</head>
+<body>
+<nav>
+<ul>
+<li class="logo" style="color: #fff">MELK TECH COMPANY</li>
+<div class="item">
+<li><a href="welcome.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="Register.html" target="blank">ACCOUNT</a></li>
+<li><a href="Contact.html">CONTACT</a></li>
+</div>
+<li>
+    <form action="search.php" method="POST">
+<div class="search">
+<input type="search" name="fname" placeholder="search">
+<input type="submit" name="search" value="search">
+</form>
+</li>
+</ul>
+</nav>
+<footer>
+   WELCOME TO MELK TECH COMPANY
+</footer>
+</body>
+</html>
